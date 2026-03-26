@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/questionary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#cc00ff"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:text="Questionario Felicidade" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Quais atividades você pratica?" />
+
+    <CheckBox
+        android:id="@+id/cbTrabalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trabalho" />
+
+    <CheckBox
+        android:id="@+id/cbEstudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estudo" />
+
+    <CheckBox
+        android:id="@+id/cbFolga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Folga" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Horas de sono" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="163dp">
+
+        <RadioButton
+            android:id="@+id/rbSono1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0-3" />
+
+        <RadioButton
+            android:id="@+id/rbSono2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4-8" />
+
+        <RadioButton
+            android:id="@+id/rbSono3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8-12" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Níveis de stress" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="166dp">
+
+        <RadioButton
+            android:id="@+id/rbStress1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0-3" />
+
+        <RadioButton
+            android:id="@+id/rbStress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4-8" />
+
+        <RadioButton
+            android:id="@+id/rbStress3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8-10" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#cc00ff"
+        android:elevation="24dp"
+        android:text="Enviar"
+        android:translationZ="10dp" />
+</LinearLayout>
