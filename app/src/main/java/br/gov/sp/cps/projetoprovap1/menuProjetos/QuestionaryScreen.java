@@ -56,9 +56,9 @@ public class QuestionaryScreen extends AppCompatActivity {
         if (rbSono1.isChecked()) {
             pesoSono = 1;
         } else if (rbSono2.isChecked()) {
-            pesoSono = 3;
-        } else if (rbSono3.isChecked()) {
             pesoSono = 2;
+        } else if (rbSono3.isChecked()) {
+            pesoSono = 3;
         } else {
             Toast.makeText(this, "Selecione as horas de sono", Toast.LENGTH_SHORT).show();
             return;
@@ -81,13 +81,13 @@ public class QuestionaryScreen extends AppCompatActivity {
         String classificacao = "";
         if (felicidade >= 0.0 && felicidade <= 2.0) {
             classificacao = "Muito Baixa (Alerta crítico)";
-        } else if (felicidade > 2.0 && felicidade <= 4.0) {
+        } else if (felicidade > 2.1 && felicidade <= 4.0) {
             classificacao = "Baixa (Equilíbrio precário)";
-        } else if (felicidade > 4.0 && felicidade <= 6.0) {
+        } else if (felicidade > 4.1 && felicidade <= 6.0) {
             classificacao = "Moderada (Estado neutro)";
-        } else if (felicidade > 6.0 && felicidade <= 8.0) {
+        } else if (felicidade > 6.1 && felicidade <= 8.0) {
             classificacao = "Alta (Bom equilíbrio)";
-        } else if (felicidade > 8.0 && felicidade <= 10.0) {
+        } else if (felicidade > 8.1 && felicidade <= 10.0) {
             classificacao = "Plena (Estado ideal)";
         } else {
             classificacao = "Valor inválido";
